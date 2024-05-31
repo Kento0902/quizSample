@@ -1,5 +1,5 @@
 FROM maven:3-eclipse-temurin-17 AS build
-COPY ./ /home/app
+COPY ./ ./home/app
 RUN cd /home/app && ./gradlew build
 
 FROM amazoncorretto:17-alpine
